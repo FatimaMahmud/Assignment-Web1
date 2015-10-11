@@ -1,0 +1,29 @@
+.vehicle{
+	
+	animation: move-forward 4s 2s ease infinite both; 
+}
+
+@keyframes move {
+  from {
+            transform: translate(10px, -20px);
+  }
+  to {
+            transform: translate(200px, -20px);
+  }
+}
+
+#brain{ 
+  animation: animate 5s linear infinite;
+  transform-origin: 50% 100%;
+}
+
+
+@keyframes move-forward {
+  
+  from {
+            transform: translate(200px, -20px);
+  }
+  to {
+            transform: translate(10px, -20px);
+  }
+}

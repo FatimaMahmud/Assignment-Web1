@@ -1,0 +1,152 @@
+*{
+margin:0px;
+padding:0px;
+}
+/*Front Row*/
+
+.blade1, .blade2, .blade3, .blade4, .blade5, 
+.blade6, .blade7, .blade8, .blade9, .blade10, 
+.blade11, .blade12, .blade13, .blade14, .blade15, 
+.blade16, .blade17, .blade18, .blade19, .blade20, 
+.blade21, .blade22, .blade23, .blade24, .blade25, 
+.blade26, .blade27, .blade28, .blade29, .blade30{
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 55px solid #156A32;
+    position: absolute;
+    -webkit-animation: mymove 5s infinite;  
+    animation: mymove 5s infinite;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    z-index: 7;
+    bottom: 0px;
+}
+
+.blade1 {left: 0px;}
+.blade2 {left: 25px;}
+.blade3 {left: 50px;}
+.blade4 {left: 75px;}
+.blade5 {left: 100px;}
+.blade6 {left: 125px;}
+.blade7 {left: 150px;}
+.blade8 {left: 175px;}
+.blade9 {left: 200px;}
+.blade10 {left: 225px;}
+.blade11 {left: 250px;}
+.blade12 {left: 275px;}
+.blade13 {left: 300px;}
+.blade14 {left: 325px;}
+.blade15 {left: 350px;}
+.blade16 {left: 375px;}
+.blade17 {left: 400px;}
+.blade18 {left: 425px;}
+.blade19 {left: 450px;}
+.blade20 {left: 475px;}
+.blade21 {left: 500px;}
+.blade22 {left: 525px;}
+.blade23 {left: 550px;}
+.blade24 {left: 575px;}
+.blade25 {left: 600px;}
+.blade26 {left: 625px;}
+.blade27 {left: 650px;}
+.blade28 {left: 675px;}
+.blade29 {left: 700px;}
+.blade30 {left: 725px;}
+@-webkit-keyframes mymove {
+    0%   {
+      border-left: 10px solid transparent; 
+      border-right: 25px solid transparent; 
+      border-bottom: 55px solid #156A32; }
+    25% {
+      border-left: 25px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-bottom: 55px solid #156A32; }
+    50% {
+      border-left: 10px solid transparent; 
+      border-right: 25px solid transparent; 
+      border-bottom: 55px solid #156A32; }
+    75%   {
+      border-left: 25px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-bottom: 55px solid #156A32; }
+    100%   {
+      border-left: 10px solid transparent; 
+      border-right: 25px solid transparent; 
+      border-bottom: 55px solid #156A32; }
+}
+
+
+
+/*Back Row*/
+
+.blade1b, .blade2b, .blade3b, .blade4b, .blade5b,
+.blade6b, .blade7b, .blade8b, .blade9b, .blade10b,
+.blade11b, .blade12b, .blade13b, .blade14b, .blade15b,
+.blade16b, .blade17b, .blade18b, .blade19b, .blade20b,
+.blade21b, .blade22b, .blade23b, .blade24b, .blade25b,
+.blade26b, .blade27b, .blade28b, .blade29b, .blade30b {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 55px solid #1E4018;
+    position: absolute;
+    -webkit-animation: mymoveb 5s infinite;  
+    animation: mymoveb 5s infinite;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    z-index: 5;
+    bottom: 0px;
+}
+
+.blade1b {left: 15px;}
+.blade2b {left: 35px;}
+.blade3b {left: 65px;}
+.blade4b {left: 85px;}
+.blade5b {left: 115px;}
+.blade6b {left: 135px;}
+.blade7b {left: 165px;}
+.blade8b {left: 185px;}
+.blade9b {left: 215px;}
+.blade10b {left: 235px;}
+.blade11b {left: 265px;}
+.blade12b {left: 285px;}
+.blade13b {left: 315px;}
+.blade14b {left: 335px;}
+.blade15b {left: 365px;}
+.blade16b {left: 385px;}
+.blade17b {left: 415px;}
+.blade18b {left: 435px;}
+.blade19b {left: 465px;}
+.blade20b {left: 485px;}
+.blade21b {left: 515px;}
+.blade22b {left: 535px;}
+.blade23b {left: 565px;}
+.blade24b {left: 585px;}
+.blade25b {left: 615px;}
+.blade26b {left: 635px;}
+.blade27b {left: 665px;}
+.blade28b {left: 685px;}
+.blade29b {left: 715px;}
+.blade30b {left: 735px;}
+
+@-webkit-keyframes mymoveb {
+    0%   {
+      border-left: 10px solid transparent; 
+      border-right: 25px solid transparent; 
+      border-bottom: 55px solid #1E4018; }
+    25% {
+      border-left: 25px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-bottom: 55px solid #1E4018; }
+    50% {
+      border-left: 10px solid transparent; 
+      border-right: 25px solid transparent; 
+      border-bottom: 55px solid #1E4018; }
+    75%   {
+      border-left: 25px solid transparent; 
+      border-right: 10px solid transparent; 
+      border-bottom: 55px solid #1E4018; }
+    100%   {
+      border-left: 10px solid transparent; 
+      border-right: 25px solid transparent; 
+      border-bottom: 55px solid #1E4018; }
+}

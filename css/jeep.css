@@ -1,0 +1,293 @@
+.animation {
+  border-bottom: 5px solid #000;
+}
+
+.jeep {
+  position: relative;
+}
+.jeep .bodyy {
+  background: #000;
+  width: 200px;
+  height: 40px;
+  margin: 100px auto 50px;
+  position: relative;
+}
+.jeep .bodyy .driver {
+  position: relative;
+  z-index: 100;
+  width: 55px;
+  height: 50px;
+  bottom: 20px;
+  left: 80px;
+}
+.jeep .bodyy .driver .head {
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  background: #000;
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.jeep .bodyy .driver .torso {
+  background: #000;
+  width: 10px;
+  height: 25px;
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+}
+.jeep .bodyy .driver .torso .arm {
+  background: #000;
+  width: 8px;
+  height: 30px;
+  position: absolute;
+  bottom: 5px;
+  left: 12px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.jeep .bodyy .driver .torso .leg {
+  background: #000;
+  width: 10px;
+  height: 30px;
+  position: absolute;
+  bottom: -10px;
+  left: 10px;
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.jeep .bodyy .driver .torso .leg:before {
+  content: '';
+  width: 10px;
+  height: 25px;
+  position: absolute;
+  left: 6px;
+  bottom: 23px;
+  background: #000;
+  -moz-transform: rotate(35deg);
+  -ms-transform: rotate(35deg);
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+}
+.jeep .bodyy .door {
+  position: absolute;
+  bottom: 10px;
+  left: 75px;
+  width: 55px;
+  height: 60px;
+  background: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.jeep .bodyy .wheel-spare {
+  position: absolute;
+  background: #000;
+  left: -25px;
+  top: -30px;
+  width: 25px;
+  height: 60px;
+}
+.jeep .bodyy .wheel-spare:before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -5px;
+  width: 5px;
+  height: 40px;
+  background: #000;
+}
+.jeep .bodyy .wheel {
+  position: absolute;
+  top: 30px;
+  background: #000;
+  width: 60px;
+  height: 60px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  animation: wheels 2s linear infinite;
+  -webkit-animation: wheels 2s linear infinite;
+  -moz-animation: wheels 2s linear infinite;
+}
+.jeep .bodyy .wheel.wheel-front {
+  right: 5px;
+}
+.jeep .bodyy .wheel.wheel-rear {
+  left: 5px;
+}
+.jeep .bodyy .wheel span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  height: 60px;
+  width: 60px;
+}
+.jeep .bodyy .wheel span:before {
+  position: absolute;
+  content: '';
+  display: block;
+  background: #000;
+  width: 12px;
+  height: 4px;
+  margin-left: -6px;
+  left: 50%;
+  top: -3px;
+}
+.jeep .bodyy .wheel span:after {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  display: block;
+  background: #fff;
+  height: 6px;
+  width: 6px;
+  margin-left: -3px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+}
+.jeep .bodyy .wheel span.thread-01 {
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.jeep .bodyy .wheel span.thread-02 {
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.jeep .bodyy .wheel span.thread-03 {
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.jeep .bodyy .wheel span.thread-04 {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.jeep .bodyy .wheel span.thread-05 {
+  -moz-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.jeep .bodyy .wheel span.thread-06 {
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.jeep .bodyy .wheel span.thread-07 {
+  -moz-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+.jeep .bodyy .windshield {
+  position: absolute;
+  content: '';
+  display: block;
+  background: #000;
+  width: 8px;
+  height: 45px;
+  left: 125px;
+  bottom: 35px;
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+.jeep .bodyy .rollcage {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  background: #000;
+  width: 10px;
+  height: 40px;
+}
+.jeep .bodyy .rollcage:before {
+  position: absolute;
+  bottom: 22px;
+  right: 15px;
+  content: '';
+  display: block;
+  background: #000;
+  width: 10px;
+  height: 25px;
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+.jeep .bodyy .rollcage:after {
+  position: absolute;
+  bottom: -15px;
+  right: 43px;
+  content: '';
+  display: block;
+  background: #000;
+  width: 10px;
+  height: 60px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+@keyframes wheels {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes wheels {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes wheels {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

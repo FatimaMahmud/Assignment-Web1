@@ -1,0 +1,138 @@
+*{
+margin:0px;
+padding:0px;
+}
+#container {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 120px;
+    background: #990033;
+    margin: 50px auto;
+}
+#pencil {
+    display: block;
+    position: absolute;
+    width: 32px;
+    background: #990033;
+    left: 0;
+    top: 0;
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+#cap {
+    display: block;
+    width: 32px;
+    height: 5px;
+    background: #963;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+.penl {
+    display: block;
+    position: relative;
+    width: 8px;
+    height: 70px;
+    background: #b00;
+    overflow: hidden;
+    float: left;
+}
+#penm {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 70px;
+    background: #e00;
+    overflow: hidden;
+    float: left;
+}
+.penlbot {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #b00;
+    border-left: 4px solid #fc3;
+    border-right: 4px solid #fc3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+.penmbot {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #e00;
+    border-left: 8px solid #fc3;
+    border-right: 8px solid #fc3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+}
+#pencut {
+    display: block;
+    clear: both;
+    width: 16px;
+    height: 0;
+    border-top: 15px solid #fc3;
+    border-left: 8px solid #990033;
+    border-right: 8px solid #990033;
+    overflow: hidden;
+}
+.pennib {
+    display: block;
+    width: 8px;
+    height: 15px;
+    background: #990033;
+    float: left;
+    overflow: hidden;
+}
+#lead {
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 15px solid #000;
+    border-left: 8px solid #990033;
+    border-right: 8px solid #990033;
+    overflow: hidden;
+    float: left;
+}
+#line {
+    display: block;
+    width: 0;
+    height: 10px;
+    background: #990033;
+    border-top: 2px solid #fff;
+    position: absolute;
+    top: 106px;
+    left: 17px;
+    -webkit-transition: width 0.6s;
+    -moz-transition: width 0.6s;
+    -o-transition: width 0.6s;
+    transition: width 0.6s;
+}
+a#drawing,
+a#drawing:visited {
+    color: #e00;
+    background: #990033;
+    display: block;
+    width: 300px;
+    margin: 80px auto 0 auto;
+}
+a#drawing:hover {
+    color: #000;
+    background: #fffffe;
+    cursor: pointer;
+}
+a#drawing:hover #container #pencil {
+    position: absolute;
+    left: 268px;
+    top: 0;
+}
+a#drawing:hover #container #line {
+    border-top: 2px solid #000;
+    width: 268px;
+}

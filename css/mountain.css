@@ -1,0 +1,133 @@
+
+.overflow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1000px;
+  height: 150px;
+  padding-top: 130px;
+  padding-left: 62px;
+  overflow: hidden;
+}
+
+.mountain {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #7483AA;
+  overflow: hidden;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.mountain div {
+  position: absolute;
+}
+.mountain.mountain-2 {
+  z-index: 2;
+  top: -250px;
+  left: 300px;
+  -moz-transform: rotate(28deg);
+  -ms-transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+}
+.mountain.mountain-3 {
+  width: 150px;
+  height: 100px;
+  z-index: -1;
+  top: -600px;
+  left: 235px;
+  -moz-transform: rotate(28deg);
+  -ms-transform: rotate(28deg);
+  -webkit-transform: rotate(28deg);
+  transform: rotate(28deg);
+  background: #4f5e82;
+}
+.mountain.mountain-4 {
+  top: -625px;
+  left: 525px;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+}
+.mountain.mountain-5 {
+  width: 150px;
+  height: 100px;
+  top: -825px;
+  left: 505px;
+  z-index: -1;
+  background: #4f5e82;
+}
+
+.stroke-1 {
+  width: 180px;
+  height: 100px;
+  top: -63px;
+  background: #495B87;
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+}
+.mountain-3 .stroke-1, .mountain-5 .stroke-1 {
+  background: #252e45;
+}
+.mountain-4 .stroke-1 {
+  width: 180px;
+  height: 100px;
+  top: 30px;
+  left: -120px;
+  -moz-transform: rotate(75deg);
+  -ms-transform: rotate(75deg);
+  -webkit-transform: rotate(75deg);
+  transform: rotate(75deg);
+}
+
+.stroke-2 {
+  top: 77px;
+  left: 95px;
+  width: 150px;
+  height: 43px;
+  background: #495B87;
+}
+.mountain-1 .stroke-2 {
+  -moz-transform: rotate(55deg);
+  -ms-transform: rotate(55deg);
+  -webkit-transform: rotate(55deg);
+  transform: rotate(55deg);
+}
+.mountain-2 .stroke-2 {
+  left: 130px;
+  top: -25px;
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.mountain-4 .stroke-2 {
+  height: 200px;
+  top: 15px;
+  left: 0px;
+  background: #7483AA;
+  -moz-transform: rotate(190deg);
+  -ms-transform: rotate(190deg);
+  -webkit-transform: rotate(190deg);
+  transform: rotate(190deg);
+}
+
+.stroke-3 {
+  top: -25px;
+  left: 166px;
+  width: 160px;
+  height: 180px;
+  background: #495B87;
+  -moz-transform: rotate(-17deg);
+  -ms-transform: rotate(-17deg);
+  -webkit-transform: rotate(-17deg);
+  transform: rotate(-17deg);
+}

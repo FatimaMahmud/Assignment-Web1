@@ -1,0 +1,92 @@
+*{
+margin:0px;
+padding:0px;
+}
+.fish {
+          animation: swimAcross 8s 0s backwards linear infinite;
+}
+
+
+#tailFin {
+          transform-origin: 100% 50%;
+          transform-style: preserve-3d;
+          animation: waveTail 1s 0s infinite alternate ease;
+}
+
+
+.bubbles {
+  height: 150px;
+  width: 40px;
+  position: relative;
+}
+
+.bubble {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 20px;
+  min-height: 20px;
+  position: absolute;
+  opacity: .6;
+}
+
+.bubble:nth-child(1) {
+  left: 30px;
+          animation: ascendBubble 6s 0s ease infinite both;
+}
+
+.bubble:nth-child(2) {
+  top: 25px;
+  left: 10px;
+          animation: ascendBubble 8s 0s ease infinite both;
+}
+
+.bubble:nth-child(3) {
+  top: 15px;
+          animation: ascendBubble 4s 2s ease infinite both;
+}
+
+.bubble:nth-child(4) {
+  top: 20px;
+  left: 25px;
+          animation: ascendBubble 8s 0s ease infinite both;
+}
+
+@keyframes swimAcross {
+  0% {
+            transform: translate(20px, 40px);
+  }
+  10% {
+            transform: translate(-200px, 60px);
+  }
+  20% {
+            transform: translate(20px, 40px);
+  }
+  50% {
+            transform: translate(300px, 110px);
+  }
+  75% {
+            transform: translate(650px, 50px);
+  }
+  100% {
+            transform: translate(750px, 50px);
+  }
+}
+
+@keyframes waveTail {
+  from {
+            transform: rotateY(-35deg);
+  }
+  to {
+            transform: rotateY(35deg);
+  }
+}
+
+@keyframes ascendBubble {
+  from {
+            transform: translate(10px, 400px);
+  }
+  to {
+            transform: translate(-10px, -300px);
+  }
+}

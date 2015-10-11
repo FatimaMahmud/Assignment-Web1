@@ -1,0 +1,23 @@
+*{
+margin:0px;
+padding:0px;
+}
+.umbrella {
+  margin: 20% auto 0 auto;
+  position: relative;
+  width: 75px;
+  height: 150px;
+  border-top-right-radius: 95px 95px;
+  border-bottom-left-radius: 350px 0px;
+  box-shadow: -5px -55px 0 0 black;
+}
+.umbrella:after {
+  content: "";
+  position: absolute;
+  left: -82px;
+  width: 75px;
+  height: 150px;
+  border-top-left-radius: 95px 95px;
+  border-bottom-left-radius: 350px 0px;
+  box-shadow: 5px -55px 0 0 black;
+}

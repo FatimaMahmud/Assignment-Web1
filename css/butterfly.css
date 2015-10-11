@@ -1,0 +1,153 @@
+*{
+margin:0px;
+padding:0px;
+}
+
+div:after , div:before {
+  display : block;
+  content : "";
+  position: absolute;
+  z-index : -1;
+}
+
+.body1 {
+  position : relative; 
+  margin   : 120px auto;
+  width    : 30px;
+  height   : 150px;
+  border-radius : 50%;
+  background : #0ff;
+  border     : 1px solid #eee;
+}
+
+.body1:before , .body1:after {
+  top    : -80px;
+  left   : 0;
+  width  : 1px;
+  height : 60px;
+  background : #f0f;
+  transform  : rotate(-20deg);
+}
+
+.body1:after {
+  left  : 30px;
+  transform  : rotate(20deg);	
+}
+
+.head1{
+  position : absolute;
+  bottom   : 99%;
+  left     : -5px;
+  width    : 40px;
+  height   : 40px;
+  border-radius : 50%;
+  background : #0ff;
+  box-shadow : inset 0 0 10px 0 #f4f;
+}		
+
+.head1:before , .head1:after {
+  top    : -45px;
+  left   : -10px;
+  width  : 10px;
+  height : 10px;
+  border-radius : 50%;
+  background : #f0f;
+}
+
+.head1:after {
+  left : 40px;
+}
+
+
+.left1 , .right1{
+  width  : 50px;
+  height : 50px;
+  background : #f0f;
+  position   : absolute;
+  top        : 50px;
+  z-index    : -1;
+  perspective : 250;
+}
+
+.left1 {
+  right : 100%;
+  transform-origin : 100% 0;
+  animation : l-fly .7s ease-out infinite alternate both;
+}
+
+.right1  {
+  left : 100%;
+  transform-origin : 0 0;
+  animation : fly .7s ease-out infinite alternate both;
+}
+
+.left1:before , .right1:before {
+  width  : 130px;
+  height : 200px;
+  top    : -140px;
+  z-index    : -2;
+  background : #0ff;
+  border-radius : 50%/60% 60% 40% 40%;
+}
+
+.left1:before {
+  right  : 0;
+  transform : rotate(150deg);
+  box-shadow : inset -5px -5px 5px 1px magenta;
+}
+
+.right1:before {
+  left   : 0;
+  transform : rotate(-150deg);
+  box-shadow : inset 5px -5px 5px 1px magenta;
+}
+
+.left1:after , .right1:after {
+  width  : 100px;
+  height : 160px;
+  top    : -20px;
+  z-index    : -2;
+  background : #0ff;
+  border-radius         : 50%/60% 60% 40% 40%;
+}
+
+.left1:after {
+  right  : 20px;
+  transform : rotate(70deg);
+  box-shadow : inset -1px -5px 5px 1px magenta;
+}
+
+
+.right1:after {
+  left   : 20px;
+  transform : rotate(-70deg);
+  box-shadow : inset 1px -5px 5px 1px magenta;
+}
+
+.front1 {
+  position : absolute;
+  top      : -90px;
+  left     : -50px;
+  z-index  : 2;
+  width  : 50px;
+  height : 50px;
+  border-radius : 50%;
+  background : #f0f;
+  box-shadow : 0 0 10px 10px #ff0 , 0 120px 0 -10px #fb0 , 0 120px 10px 0 #fff;
+}
+
+.right1 .front1 {
+  left     : 50px;
+}
+
+@keyframes fly {
+  100% {
+    transform  : rotateY(60deg);
+  }
+}
+
+@keyframes l-fly {
+  100% {
+    transform  : rotateY(60deg);
+  }
+}

@@ -1,0 +1,41 @@
+.glasses {
+  position: relative;
+  width: 212px;
+  height: 65px;
+}
+.glasses:hover .glass {
+  background-image: -webkit-linear-gradient(top, #ff7660, #ff427d 70%);
+  background-image: linear-gradient(to bottom, #ff7660, #ff427d 70%);
+}
+.glasses .g-top {
+  position: absolute;
+  height: 15px;
+  width: 212px;
+  background-color: #3C3C3C;
+  top: 5px;
+  left: -5px;
+  border-radius: 5px;
+}
+.glasses .glass {
+  position: absolute;
+  height: 65px;
+  width: 90px;
+  background-image: -webkit-linear-gradient(top, #4DE2DC, #3888D1 70%);
+  background-image: linear-gradient(to bottom, #4DE2DC, #3888D1 70%);
+  border: 10px solid #3C3C3C;
+  top: 0;
+}
+.glasses .g-left {
+  left: 0;
+  -webkit-transform: rotate(2deg);
+      -ms-transform: rotate(2deg);
+          transform: rotate(2deg);
+  border-radius: 12px 12px 33px 29px;
+}
+.glasses .g-right {
+  left: 112px;
+  -webkit-transform: rotate(-2deg);
+      -ms-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  border-radius: 12px 12px 29px 33px;
+}

@@ -1,0 +1,104 @@
+*
+{
+margin:0px;
+padding:0px;
+}
+
+#shoe
+{
+width: 0px;
+height: 0px;
+border-left: 250px solid transparent;
+border-right: 40px solid transparent;
+border-bottom: 120px solid #eb5b58;
+margin: 50px auto 0px;
+position:relative;
+}
+#shoe:after
+{
+width: 75px;
+height: 60px;
+border-radius: 45%;
+background: #097881;
+position: absolute;
+left: -65px;
+top: -9px;
+content: "";
+}
+#shoe:before
+{
+width: 295px;
+height: 20px;
+background: #ffffff;
+position: absolute;
+left: -256px;
+top: 120px;
+content: "";
+border-radius: 8px 0px 12px 9px;
+}
+
+#shoeless
+{
+position: absolute;
+left: -173px;
+top: 58px;
+-webkit-transform: rotate(-25deg);
+-moz-transform: rotate(-25deg);
+-0-transform: rotate(-25deg);
+transform: rotate(-25deg);
+}
+
+#shoeless li
+{
+list-style-type: none;
+background: #fff;
+display: inline-block;
+width: 5px;
+height: 15px;
+content: "";
+margin-right: 5px;
+border-radius: 10px;
+}
+
+#shoecurve
+{
+width: 200px;
+height: 20px;
+background: #dc4e49;
+position: absolute;
+left: -250px;
+top: 100px;
+content: "";
+border-radius: 100% / 49px 49px 0px 0px;
+}
+
+#shoecurve:before
+{
+position: absolute;
+content: "";
+width: 35px;
+height: 8px;
+background: #fff;
+left: 108px;
+top: -7px;
+border-radius: 5px 5px 0px 0px;
+}
+
+#soulpattern
+{
+position: absolute;
+left:-250px;
+top:120px;
+width:290px;
+}
+
+#soulpattern li
+{
+list-style-type: none;
+background: #e3e3e3;
+width:2px;
+height:20px;
+display:inline-block;
+content:"";
+margin-left:0px;
+}
